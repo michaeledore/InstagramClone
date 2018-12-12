@@ -1,5 +1,6 @@
 package com.mimyboutique.android.instagramclone;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -68,6 +69,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
                ParseQuery<ParseObject>queryAll = ParseQuery.getQuery("KickBoxer");
              //  queryAll.whereGreaterThan("punchPower",100);
                queryAll.whereGreaterThanOrEqualTo("punchPower",3000);
+               queryAll.setLimit(1);
                queryAll.findInBackground(new FindCallback <ParseObject>() {
                    @Override
                    public void done(List<ParseObject> objects, ParseException e) {
@@ -92,6 +94,8 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
        btnTransition.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
+               Intent intent =  new Intent(SignUp.this,SignUpLoginActivity.class);
+               startActivity(intent);
 
            }
        });
