@@ -13,7 +13,7 @@
         android:layout_width="304dp"
         android:layout_height="121dp"
         android:layout_marginTop="16dp"
-        android:scaleType="fitCenter"
+        android:contentDescription="TODO" android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
