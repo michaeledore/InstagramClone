@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/postImageItem"
+        android:orderInCategory="100"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:showAsAction="always"
+        android:title="Post Image"
+        android:icon="@drawable/camera_item"/>
+
+
+    <item
+        android:id="@+id/LogoutUserItem"
+        android:orderInCategory="100"
+        android:title="Logout"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:showAsAction="never"/>
+
+
+
+
+
+
+</menu>
